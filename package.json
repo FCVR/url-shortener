@@ -1,0 +1,27 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "url shortener service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FCVR/url-shortener.git"
+  },
+  "author": "karthikdivi, npedada, rakeshkumar5b4, rmolabanti, SaiSreenathG, siddav, slingaladinne",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FCVR/url-shortener/issues"
+  },
+  "homepage": "https://github.com/FCVR/url-shortener#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "~1.17.1",
+    "express-session": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "mongodb": "^2.2.26",
+    "co": "^4.6.0",
+  }
+}
