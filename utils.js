@@ -1,5 +1,5 @@
 var bases = require('bases');
-var config = require('config');
+var config = require('./config');
 
 module.exports = {
   generateRandomNumber: function (maxVal) {
@@ -34,7 +34,7 @@ module.exports = {
     return val;
   },
 
-  getRandomBaseString : function() { 
+  getRandomBaseString : function() {
     return this.encode(this.generateRandomNumber(Math.pow(this.getBASE(), config.maxChars)));
   }
 

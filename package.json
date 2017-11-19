@@ -25,7 +25,8 @@
     "express": "^4.16.2",
     "express-session": "~1.15.2",
     "lru-cache": "4.1.1",
-    "mongodb": "^2.2.26"
+    "mongodb": "^2.2.26",
+    "redis": "^2.8.0"
   },
   "devDependencies": {
     "app-root-path": "^2.0.1",
