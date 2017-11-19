@@ -30,6 +30,7 @@
     "mongodb": "^2.2.26"
   },
   "devDependencies": {
+    "app-root-path": "^2.0.1",
     "nodemon": "^1.12.1"
   }
 }
