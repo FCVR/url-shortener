@@ -1,20 +1,21 @@
 var inMemoryCache = {};
 
 module.exports = {
-  put: function(key, val){
+  put: function(key, val, cb){
     inMemoryCache[key] = val;
+    cb(null);
   },
-  exists: function(key){
+  exists: function(key, cb){
     if(inMemoryCache[key]){
-      return true;
+      cb(true, null);
     }else{
-      return false;
+      cb(false, null);
     }
   },
-  get: function(key){
-    return inMemoryCache[key];
+  get: function(key, cb){
+    cb(inMemoryCache[key], null);
   },
-  getAll: function(){
-    return inMemoryCache;
+  getAll: function(cb){
+    cb(inMemoryCache, null);
   }
 };
