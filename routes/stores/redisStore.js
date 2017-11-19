@@ -1,5 +1,10 @@
 var redis = require("redis")
-var client = redis.createClient();
+var client;
+if(process.env.REDIS_URL){
+     client = redis.createClient(process.env.REDIS_URL);
+}else{
+     client = redis.createClient();
+}
 var hashKey = 'urls';
 
 client.on("error", function (err) {

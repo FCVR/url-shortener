@@ -6,7 +6,7 @@ var utils = require(appRoot +'/utils');
 var store = require(appRoot +'/routes/stores/'+config.storeToUse);
 
 router.get('/', function(req, res) {
-  res.send('Welcome to url shortener');
+  res.send('Welcome to url shortener. v1.0');
 });
 
 router.get('/shorten', function(req, res){
