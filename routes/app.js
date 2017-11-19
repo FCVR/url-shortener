@@ -12,7 +12,7 @@ router.get('/', function(req, res) {
 router.get('/shorten', function(req, res){
   var inputUrl = req.query.url;
   if(inputUrl){
-    var id =  utils.getBase64FromBase10(utils.generateRandomNumber(config.maxNum))
+    var id = utils.getRandomBaseString();
     store.put(id, inputUrl, function(error){
         if(error){
             res.status(500).send(error);

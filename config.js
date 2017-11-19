@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 var config = {
-  maxNum : 14776335, // 62^4
+  maxChars : 4,
+  BASE_CHARS: "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ#@",
   domain : 'https://fcvr-shortener.herokuapp.com/'
 }
 
