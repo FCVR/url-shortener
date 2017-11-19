@@ -3,7 +3,7 @@ var appRoot = require('app-root-path');
 var router = express.Router();
 var config = require(appRoot +'/config');
 var utils = require(appRoot +'/utils');
-var store = require(appRoot +'/stores/memoryStore.js');
+var store = require(appRoot +'/routes/stores/memoryStore.js');
 
 router.get('/', function(req, res) {
   res.send('Welcome to url shortener');
